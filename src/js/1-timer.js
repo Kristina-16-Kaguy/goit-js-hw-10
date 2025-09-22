@@ -6,6 +6,10 @@ import 'izitoast/dist/css/iziToast.min.css';
 
 const inputEl = document.querySelector('#datetime-picker');
 const startButton = document.querySelector('[data-start]');
+const days = document.querySelector('[data-days]');
+const hours = document.querySelector('[data-hours]');
+const minutes = document.querySelector('[data-minutes]');
+const seconds = document.querySelector('[data-seconds]');
 
 const options = {
   enableTime: true,
@@ -18,6 +22,9 @@ const options = {
 };
 
 flatpickr(inputEl, options);
+
+let userSelectedDate = null;
+let timerId = null;
 
 function convertMs(ms) {
   // Number of milliseconds per unit of time
