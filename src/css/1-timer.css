@@ -50,6 +50,7 @@ button[data-start]:focus {
 button[data-start]:disabled {
   background-color: #cfcfcf;
   color: #989898;
+  cursor: default;
 }
 
 .flatpickr-input:hover,
