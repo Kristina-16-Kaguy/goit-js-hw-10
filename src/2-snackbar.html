@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Генератор промісів</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./css/styles.css" />
     <script type="module" src="./js/2-snackbar.js"></script>
   </head>
@@ -21,6 +28,28 @@
           <span class="main-title-gradient">Ласкаво просимо</span> до генератора
           промісів
         </h1>
+      </div>
+      <div class="promises-form">
+        <form class="form">
+          <label class="delay-label">
+            Delay (ms)
+            <input type="number" name="delay" required />
+          </label>
+
+          <fieldset>
+            <legend>State</legend>
+            <label class="input-radio">
+              <input type="radio" name="state" value="fulfilled" required />
+              Fulfilled
+            </label>
+            <label class="input-radio">
+              <input type="radio" name="state" value="rejected" required />
+              Rejected
+            </label>
+          </fieldset>
+
+          <button type="submit">Create notification</button>
+        </form>
       </div>
     </main>
 

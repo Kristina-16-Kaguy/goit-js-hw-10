@@ -1,0 +1,84 @@
+main {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+main:has(.back-link) {
+  text-align: left;
+}
+
+.form {
+  width: 360px;
+  height: 72px;
+}
+
+.delay-label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label input[name='delay'] {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.input [type='number'] {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+}
+
+.input [type='number']:hover,
+.input [type='number']:focus {
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+/* 
+.input [type='number']:active */
+
+fieldset {
+  border-radius: 4px;
+  stroke-width: 1px;
+  stroke: #808080;
+  margin-top: 30px;
+}
+
+.legend {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.input-radio {
+  gap: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+}
+
+fieldset:hover,
+fieldset:focus {
+  border-radius: 4px;
+  stroke-width: 1px;
+  stroke: #000;
+}
+
+button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 360px;
+  height: 40px;
+  background: #4e75ff;
+  margin-top: 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
