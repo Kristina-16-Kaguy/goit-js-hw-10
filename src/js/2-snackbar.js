@@ -33,13 +33,3 @@ form.addEventListener('submit', event => {
       });
     });
 });
-
-iziToast.error({
-  title: 'привіт',
-  message: `❌ Rejected promise in ${delay}ms`,
-});
-
-iziToast.success({
-  title: 'OK',
-  message: `✅ Fulfilled promise in ${delay}ms`,
-});
